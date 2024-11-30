@@ -62,14 +62,58 @@ const createPlayer = async (req, res) => {
   }
 };
 
-const updatePlayer = () => {
+const updatePlayer = async (req, res) => {
   try {
-  } catch (err) {}
+    const userId = new ObjectId(req.params.id);
+
+    const player = {
+      name: req.body.name,
+      gender: req.body.gender,
+      position: req.body.position,
+      clubPlayed: req.body.clubPlayed,
+      nationality: req.body.nationality,
+      birthday: req.body.birthday,
+      height: req.body.height,
+    };
+
+    const result = await mongodb
+      .getData()
+      .db()
+      .collection("Project-03")
+      .updateOne({ _id: userId }, { $set: player });
+
+    if (result.modifiedCount > 0) {
+      res.status(204).send();
+    } else {
+      res
+        .status(500)
+        .json(result.error || "an error occurred while updating user");
+    }
+  } catch (err) {
+    console.log(err);
+    res.status(500).json({ message: err });
+  }
 };
 
-const deletePlayer = () => {
+const deletePlayer = async (req, res) => {
   try {
-  } catch (err) {}
+    const userId = new ObjectId(req.params.id);
+    const result = await mongodb
+      .getData()
+      .db()
+      .collection("Project-03")
+      .deleteOne({ _id: userId });
+
+    if (result.deletedCount > 0) {
+      res.status(204).send();
+    } else {
+      res
+        .status(500)
+        .json(result.error || "an error occurred while deleting a player");
+    }
+  } catch (err) {
+    res.status(500).json({ message: err });
+  }
 };
 
 module.exports = {
