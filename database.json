@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Lionel Andres Messi",
+    "gender": "male",
+    "position": "forward",
+    "clubPlayed": [
+      "Inter-Miami",
+      "Paris Saint-Germain",
+      "Barcelona",
+      "Newell's Old Boys"
+    ],
+    "nationality": "Argentina",
+    "birthday": "24-06-1987",
+    "height": "1.7m"
+  },
+  {
+    "name": "Cristiano Ronaldo",
+    "gender": "male",
+    "position": "forward",
+    "clubPlayed": [
+      "Al-Nassr",
+      "Juventus FC",
+      "Real Madrid",
+      "Manchester United FC",
+      "Sporting C.P"
+    ],
+    "nationality": "Portugal",
+    "birthday": "05-02-1985",
+    "height": "1.87m"
+  },
+  {
+    "name": "Victor James Osimhen",
+    "gender": "male",
+    "position": "forward",
+    "clubPlayed": [
+      "Galatasaray S.K",
+      "SSC Napoli",
+      "LOSC Lille",
+      "Royal Charleroi S.C",
+      "VFL Wolfburg"
+    ],
+    "nationality": "Nigeria",
+    "birthday": "29-12-1998",
+    "height": "1.85m"
+  },
+  {
+    "name": "Ademola Lookman Olajade",
+    "gender": "male",
+    "position": "forward",
+    "clubPlayed": [
+      "Atlanta BC",
+      "Leicester City FC",
+      "Fulham F.C",
+      "RB Leipzig",
+      "Everton F.C"
+    ],
+    "nationality": "Nigeria",
+    "birthday": "20-10-1997",
+    "height": "1.75m"
+  },
+  {
+    "name": "Asisat Lamina Oshoala",
+    "gender": "female",
+    "position": "forward",
+    "clubPlayed": [
+      "Bay FC",
+      "FC Barcelona",
+      "Dallan Quanjian FC",
+      "Arsenal Ladies",
+      "Liverpool Ladies",
+      "Rivers Angels",
+      "FC Robo"
+    ],
+    "nationality": "Nigeria",
+    "birthday": "09-10-1994",
+    "height": "1.73m"
+  },
+  {
+    "name": "Cole Jermaine Palmer",
+    "gender": "male",
+    "position": "Midfielder",
+    "clubPlayed": ["Chelsea FC", "Manchester City FC"],
+    "nationality": "England",
+    "birthday": "06-05-2002",
+    "height": "1.85m"
+  },
+  {
+    "name": "Temitayo Olufisayo Olaoluwa 'Ola' Aina",
+    "gender": "male",
+    "position": "Defender",
+    "clubPlayed": [
+      "Nottm Forest",
+      "Torino",
+      "Fulham",
+      "Chelsea FC",
+      "Hull City"
+    ],
+    "nationality": "Nigeria",
+    "birthday": "08-10-1996",
+    "height": "1.84m"
+  }
+]

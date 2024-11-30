@@ -1,7 +1,7 @@
 {
   "name": "project-03-api",
   "version": "1.0.0",
-  "description": "A project backend service built by ...",
+  "description": "A project backend service that contains the data of soccer players",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
