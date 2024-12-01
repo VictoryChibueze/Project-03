@@ -5,7 +5,7 @@ const getAllPlayers = async (req, res) => {
   try {
     const result = await mongodb.getData().db().collection("Project-03").find();
     result.toArray().then((players) => {
-      res.setHeaders("Content-Type", "application/json");
+      res.setHeader("Content-Type", "application/json");
       res.status(200).json(players);
     });
   } catch (err) {
@@ -23,7 +23,7 @@ const getPlayer = async (req, res) => {
       .collection("Project-03")
       .find({ _id: userId });
     result.toArray().then((player) => {
-      res.setHeaders("Content-Type", "application/json");
+      res.setHeader("Content-Type", "application/json");
       res.status(200).json(player);
     });
   } catch (err) {

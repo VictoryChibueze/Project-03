@@ -3,9 +3,8 @@ const app = express();
 const bodyParser = require("body-parser");
 require("dotenv").config();
 const mongodb = require("./db/database");
+const indexRoute = require("./routes/index");
 const cors = require("cors");
-console.log(process.env.PORT);
-console.log(process.env.MONGODB_URL);
 
 /* *********************MIDDLEWARES************** */
 app.use(bodyParser.json());
@@ -22,6 +21,11 @@ app.use("/", (req, res, next) => {
   next();
 });
 app.use(cors());
+app.use("/", indexRoute);
+
+console.log(process.env.PORT);
+console.log(process.env.MONGODB_URL);
+
 const Port = process.env.PORT || 8080;
 mongodb.initDb((err) => {
   if (err) {
