@@ -5,7 +5,7 @@ const doc = {
     title: "Players API",
     description: "An API that contains the data of socccer players",
   },
-  host: "",
+  host: "http://localhost:8080",
   schemes: ["http", "https"],
 };
 

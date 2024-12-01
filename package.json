@@ -4,8 +4,9 @@
   "description": "A project backend service that contains the data of soccer players",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "swagger": "node swagger.js"
   },
   "author": "Victory Chibueze",
   "license": "ISC",

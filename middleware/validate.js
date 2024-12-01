@@ -1,6 +1,6 @@
 const validator = require("../helpers/validate");
 
-const saveContact = (req, res, next) => {
+const savePlayer = (req, res, next) => {
   const validationRule = {
     name: "required|string",
     gender: "required|string",
@@ -18,6 +18,12 @@ const saveContact = (req, res, next) => {
         message: "Validation failed",
         data: err,
       });
+    } else {
+      next();
     }
   });
+};
+
+module.exports = {
+  savePlayer,
 };
