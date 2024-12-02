@@ -1,0 +1,80 @@
+// LOCALHOST 
+
+### Get all players 
+GET http://localhost:8080/players
+
+### Get contact by id 
+GET http://localhost:8080/players/674afac5e8983a06c845b0c7
+
+### Create contact 
+POST http://localhost:8080/players 
+content-type: application/json
+
+ {
+    "name": "Cole Jermaine Palmer",
+    "gender": "male",
+    "position": "Midfielder",
+    "clubPlayed": [
+      "Chelsea FC",
+      "Manchester City FC"
+    ],
+    "nationality": "England",
+    "birthday": "06-05-2002",
+    "height": "1.85m"
+  }
+
+### Update contact 
+PUT http://localhost:8080/players/674de07707b540d78b878a11
+content-type: application/json
+
+ {
+    "name": "Cole Palmer",
+    "gender": "male",
+    "position": "Midfielder",
+    "clubPlayed": [
+      "Chelsea FC",
+      "Manchester City FC",
+      "Manchester City Youth"
+    ],
+    "nationality": "England",
+    "birthday": "06-05-2002",
+    "height": "1.85m"
+  }
+### DELETE contact 
+DELETE http://localhost:8080/players/674de07707b540d78b878a11
+
+// PRODUCTION Deploy
+
+### Get all contacts 
+GET https://cse341-project1-4pf5.onrender.com/contacts
+
+### Get contact by id 
+GET https://cse341-project1-4pf5.onrender.com/contacts/6742c8bc2377efc2fbfd0392
+
+### Create contact 
+POST https://cse341-project1-4pf5.onrender.com/contacts 
+content-type: application/json
+
+{
+"firstName":"Ambless", 
+"lastName":"Plug",
+"email":"ambyplug@yahoo.com", 
+"favoriteColor":"Brown", 
+"birthday":"05/04/2000"
+}
+
+### Update contact 
+PUT https://cse341-project1-4pf5.onrender.com/contacts/6742cb0f5bf84cdf85561140
+content-type: application/json
+
+{
+"firstName":"Ambless", 
+"lastName":"John",
+"email":"ambyplug@yahoo.com", 
+"favoriteColor":"Blue", 
+"birthday":"05/04/2000"
+}
+
+### DELETE contact 
+DELETE https://cse341-project1-4pf5.onrender.com/contacts/6742cb0f5bf84cdf85561140
+
