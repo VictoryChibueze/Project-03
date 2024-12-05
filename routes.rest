@@ -12,7 +12,7 @@ content-type: application/json
 
  {
     "name": "Cole Jermaine Palmer",
-    "gender": "male",
+    "gender":"male",
     "position": "Midfielder",
     "clubPlayed": [
       "Chelsea FC",
@@ -41,7 +41,7 @@ content-type: application/json
     "height": "1.85m"
   }
 ### DELETE contact 
-DELETE http://localhost:8080/players/674de07707b540d78b878a11
+DELETE http://localhost:8080/players/6750e36c07b540d78b878a13
 
 // PRODUCTION Deploy
 
