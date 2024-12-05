@@ -23,8 +23,8 @@ content-type: application/json
     "height": "1.79m"
   }
 
-### Update contact 
-PUT http://localhost:8080/players/6751566a57532b637d3b328e
+### Update players 
+PUT http://localhost:8080/players/6751989f57532b637d3b328f
 content-type: application/json
 
  {
@@ -40,7 +40,7 @@ content-type: application/json
     "height": "1.79m"
   }
 ### DELETE contact 
-DELETE http://localhost:8080/players/6751566a57532b637d3b328e
+DELETE http://localhost:8080/players/6751989f57532b637d3b328f
 
 // PRODUCTION Deploy
 
@@ -65,7 +65,7 @@ content-type: application/json
     "nationality": "England",
     "birthday": "13-07-2007",
     "height": "1.8m"
-  }
+}
 ### Update contact 
 PUT https://project-03-irq1.onrender.com/players/6742cb0f5bf84cdf85561140
 content-type: application/json
