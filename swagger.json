@@ -5,12 +5,9 @@
     "description": "An API that contains the data of socccer players",
     "version": "1.0.0"
   },
-  "host": "https://project-03-irq1.onrender.com",
+  "host": "localhost:8080",
   "basePath": "/",
-  "schemes": [
-    "http",
-    "https"
-  ],
+  "schemes": ["http", "https"],
   "paths": {
     "/": {
       "get": {
@@ -25,9 +22,7 @@
     "/players/": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "OK"
@@ -87,9 +82,7 @@
     "/players/{id}": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "id",
