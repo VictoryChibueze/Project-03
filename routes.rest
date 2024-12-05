@@ -11,16 +11,16 @@ POST http://localhost:8080/players
 content-type: application/json
 
  {
-    "name": "Cole Jermaine Palmer",
+    "name": "James Lewis Reece",
     "gender":"male",
-    "position": "Midfielder",
+    "position": "Midfilder",
     "clubPlayed": [
-      "Chelsea FC",
-      "Manchester City FC"
+      "Wigan Athletic FC",
+      "Chelsea FC"
     ],
-    "nationality": "England",
-    "birthday": "06-05-2002",
-    "height": "1.85m"
+    "nationality": "Neitherland",
+    "birthday": "08-12-1999",
+    "height": "1.79m"
   }
 
 ### Update contact 
@@ -28,17 +28,16 @@ PUT http://localhost:8080/players/674de07707b540d78b878a11
 content-type: application/json
 
  {
-    "name": "Cole Palmer",
-    "gender": "male",
+    "name": "James Lewis Reece",
+    "gender":"male",
     "position": "Midfielder",
     "clubPlayed": [
-      "Chelsea FC",
-      "Manchester City FC",
-      "Manchester City Youth"
+      "Wigan Athletic FC",
+      "Chelsea FC"
     ],
-    "nationality": "England",
-    "birthday": "06-05-2002",
-    "height": "1.85m"
+    "nationality": "Neitherland",
+    "birthday": "08-12-1999",
+    "height": "1.79m"
   }
 ### DELETE contact 
 DELETE http://localhost:8080/players/6750e36c07b540d78b878a13
@@ -46,35 +45,44 @@ DELETE http://localhost:8080/players/6750e36c07b540d78b878a13
 // PRODUCTION Deploy
 
 ### Get all contacts 
-GET https://cse341-project1-4pf5.onrender.com/contacts
+GET https://project-03-irq1.onrender.com/players
 
 ### Get contact by id 
-GET https://cse341-project1-4pf5.onrender.com/contacts/6742c8bc2377efc2fbfd0392
+GET https://project-03-irq1.onrender.com/players/6742c8bc2377efc2fbfd0392
 
 ### Create contact 
-POST https://cse341-project1-4pf5.onrender.com/contacts 
+POST https://project-03-irq1.onrender.com/players
 content-type: application/json
 
 {
-"firstName":"Ambless", 
-"lastName":"Plug",
-"email":"ambyplug@yahoo.com", 
-"favoriteColor":"Brown", 
-"birthday":"05/04/2000"
-}
-
+    "name": "Lamine Yamal",
+    "gender": "male",
+    "position": "Midfielder",
+    "clubPlayed": [
+      "FC Barcelona Atletic",
+      "FC Barcelona",
+    ],
+    "nationality": "England",
+    "birthday": "13-07-2007",
+    "height": "1.8m"
+  }
 ### Update contact 
-PUT https://cse341-project1-4pf5.onrender.com/contacts/6742cb0f5bf84cdf85561140
+PUT https://project-03-irq1.onrender.com/players/6742cb0f5bf84cdf85561140
 content-type: application/json
 
 {
-"firstName":"Ambless", 
-"lastName":"John",
-"email":"ambyplug@yahoo.com", 
-"favoriteColor":"Blue", 
-"birthday":"05/04/2000"
-}
+    "name": "Lamine Yamal",
+    "gender": "male",
+    "position": "Midfielder",
+    "clubPlayed": [
+      "FC Barcelona Atletic",
+      "FC Barcelona",
+    ],
+    "nationality": "England",
+    "birthday": "13-07-2007",
+    "height": "1.8m"
+  }
 
 ### DELETE contact 
-DELETE https://cse341-project1-4pf5.onrender.com/contacts/6742cb0f5bf84cdf85561140
+DELETE https://project-03-irq1.onrender.com/players/6750e42e07b540d78b878a14
 

@@ -5,7 +5,7 @@
     "description": "An API that contains the data of socccer players",
     "version": "1.0.0"
   },
-  "host": "https://cse341-project1-4pf5.onrender.com",
+  "host": "https://project-03-irq1.onrender.com",
   "basePath": "/",
   "schemes": ["http", "https"],
   "paths": {
