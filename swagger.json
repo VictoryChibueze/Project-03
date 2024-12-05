@@ -7,7 +7,10 @@
   },
   "host": "https://project-03-irq1.onrender.com",
   "basePath": "/",
-  "schemes": ["http", "https"],
+  "schemes": [
+    "http",
+    "https"
+  ],
   "paths": {
     "/": {
       "get": {
@@ -22,6 +25,9 @@
     "/players/": {
       "get": {
         "description": "",
+        "produces": [
+          "application/json"
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -69,6 +75,9 @@
           "201": {
             "description": "Created"
           },
+          "412": {
+            "description": "Precondition Failed"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -78,6 +87,9 @@
     "/players/{id}": {
       "get": {
         "description": "",
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -138,6 +150,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "412": {
+            "description": "Precondition Failed"
           },
           "500": {
             "description": "Internal Server Error"
