@@ -5,7 +5,7 @@ const savePlayer = (req, res, next) => {
     name: "required|string",
     gender: "required|string",
     position: "required|string",
-    clubPlayed: "",
+    clubPlayed: "required|array",
     nationality: "required|string",
     birthday: "required|string",
     height: "required|string",

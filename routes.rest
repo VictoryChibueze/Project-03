@@ -3,28 +3,11 @@
 ### Get all players 
 GET http://localhost:8080/players
 
-### Get contact by id 
-GET http://localhost:8080/players/674afac5e8983a06c845b0c7
+### Get players by id 
+GET http://localhost:8080/players/674afac5e8983a06c845b0c8
 
-### Create contact 
+### Create players 
 POST http://localhost:8080/players 
-content-type: application/json
-
- {
-    "name": "James Lewis Reece",
-    "gender":"male",
-    "position": "Midfilder",
-    "clubPlayed": [
-      "Wigan Athletic FC",
-      "Chelsea FC"
-    ],
-    "nationality": "Neitherland",
-    "birthday": "08-12-1999",
-    "height": "1.79m"
-  }
-
-### Update contact 
-PUT http://localhost:8080/players/674de07707b540d78b878a11
 content-type: application/json
 
  {
@@ -39,8 +22,25 @@ content-type: application/json
     "birthday": "08-12-1999",
     "height": "1.79m"
   }
+
+### Update contact 
+PUT http://localhost:8080/players/6751566a57532b637d3b328e
+content-type: application/json
+
+ {
+    "name": "James Lewis Reece",
+    "gender":"male",
+    "position": "Defender",
+    "clubPlayed": [
+      "Wigan Athletic FC",
+      "Chelsea FC"
+    ],
+    "nationality": "England",
+    "birthday": "08-12-1999",
+    "height": "1.79m"
+  }
 ### DELETE contact 
-DELETE http://localhost:8080/players/6750e36c07b540d78b878a13
+DELETE http://localhost:8080/players/6751566a57532b637d3b328e
 
 // PRODUCTION Deploy
 
@@ -48,7 +48,7 @@ DELETE http://localhost:8080/players/6750e36c07b540d78b878a13
 GET https://project-03-irq1.onrender.com/players
 
 ### Get contact by id 
-GET https://project-03-irq1.onrender.com/players/6742c8bc2377efc2fbfd0392
+GET https://project-03-irq1.onrender.com/players/674afac5e8983a06c845b0c8
 
 ### Create contact 
 POST https://project-03-irq1.onrender.com/players
