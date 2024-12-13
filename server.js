@@ -43,7 +43,7 @@ passport.use(
       callbackURL: process.env.CALLBACK_URL,
     },
     function (acessToken, refreshToken, profile, done) {
-      return done(null, user);
+      return done(null, profile);
     }
   )
 );
