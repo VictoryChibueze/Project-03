@@ -1,13 +1,14 @@
 const express = require("express");
-const app = express();
 const bodyParser = require("body-parser");
 require("dotenv").config();
 const mongodb = require("./db/database");
 const indexRoute = require("./routes/index");
-const cors = require("cors");
 const passport = require("passport");
+const cors = require("cors");
 const session = require("express-session");
 const GitHubStrategy = require("passport-github2").Strategy;
+
+const app = express();
 /* *********************MIDDLEWARES************** */
 app
   .use(bodyParser.json())
@@ -47,9 +48,6 @@ passport.use(
     }
   )
 );
-
-console.log(process.env.PORT);
-console.log(process.env.MONGODB_URL);
 
 const Port = process.env.PORT || 8080;
 passport.serializeUser((user, done) => {
