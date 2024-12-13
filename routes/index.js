@@ -9,4 +9,13 @@ router.get("/", (req, res) => {
 
 router.use("/players", require("./players"));
 router.get("/login", passport.authenticate("github"), (req, res) => {});
+
+router.get("/logout", function (req, res, next) {
+  req.logOut(function (err) {
+    if (err) {
+      return next();
+    }
+    res.redirect("/");
+  });
+});
 module.exports = router;
